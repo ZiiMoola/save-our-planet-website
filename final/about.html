@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About - Save Our Planet</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* General Animations */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1.2s forwards;
+    }
+
+    .slide-in-left {
+      transform: translateX(-50px);
+      opacity: 0;
+      animation: slideInLeft 1s forwards;
+    }
+
+    .slide-in-right {
+      transform: translateX(50px);
+      opacity: 0;
+      animation: slideInRight 1s forwards;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    @keyframes slideInLeft {
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes slideInRight {
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    /* Content styling */
+    .content {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .stats {
+      display: flex;
+      gap: 20px;
+      margin: 40px 0;
+    }
+
+    .card {
+      background: #e0f7e9;
+      padding: 20px;
+      border-radius: 12px;
+      flex: 1;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    /* Impact Stories */
+    .stories {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin: 40px 0;
+    }
+
+    .story {
+      background: #f0f8ff;
+      padding: 20px;
+      border-radius: 12px;
+      transition: transform 0.3s;
+    }
+
+    .story:hover {
+      transform: scale(1.02);
+    }
+
+    /* Environmental Tips */
+    .tips {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin: 40px 0;
+    }
+
+    .tip {
+      background: #e8f5e9;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .tip:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Global Reach */
+    .reach {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 40px 0;
+    }
+
+    .reach-item {
+      flex: 1 1 200px;
+      background: #d0f0e0;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .reach-item:hover {
+      transform: scale(1.05);
+    }
+
+    /* CTA */
+    .cta {
+      text-align: center;
+      background: #2c6e49;
+      color: #fff;
+      padding: 40px 20px;
+      border-radius: 12px;
+      margin-top: 50px;
+      animation: fadeIn 1.5s forwards;
+    }
+
+    .cta a {
+      display: inline-block;
+      background: #f4f4f9;
+      color: #2c6e49;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .cta a:hover {
+      background: #cde7d4;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1 class="logo">🌍 Save Our Planet</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="getinvolved.html">Get Involved</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="content fade-in">
+    <h2>About Our Cause</h2>
+    <p>Climate change is one of the most urgent issues of our time. Rising sea levels, wildfires, and loss of biodiversity threaten our planet. We believe that through awareness, education, and action, we can reverse the damage and secure a brighter future.</p>
+
+    <div class="stats slide-in-left">
+      <div class="card">
+        <h3>70%</h3>
+        <p>Forests lost in the last 100 years</p>
+      </div>
+      <div class="card">
+        <h3>1M+</h3>
+        <p>Species at risk of extinction</p>
+      </div>
+      <div class="card">
+        <h3>2050</h3>
+        <p>Critical deadline for global change</p>
+      </div>
+    </div>
+
+    <h2>Our Mission</h2>
+    <p>Our mission is simple: to inspire individuals, communities, and governments to take meaningful steps towards protecting our environment. We are dedicated to promoting sustainable living, reducing waste, and encouraging renewable energy solutions.</p>
+
+    <h2>Our Vision</h2>
+    <p>We envision a world where people live in harmony with nature — where clean air, fresh water, and thriving ecosystems are accessible to all. Together, we can build a future where our planet is preserved for generations to come.</p>
+
+    <h2>What We Do</h2>
+    <ul>
+      <li>🌱 Organize community cleanups and tree planting drives</li>
+      <li>📚 Provide educational workshops and eco-friendly resources</li>
+      <li>💡 Advocate for renewable energy and sustainable practices</li>
+      <li>🛑 Campaign against deforestation, pollution, and climate inaction</li>
+      <li>🤝 Collaborate with global organizations for stronger impact</li>
+    </ul>
+
+    <h2>Impact Stories</h2>
+    <div class="stories slide-in-right">
+      <div class="story">
+        <h3>Reforesting Local Parks</h3>
+        <p>Over 5,000 trees planted in urban areas, bringing wildlife back and improving air quality.</p>
+      </div>
+      <div class="story">
+        <h3>Clean Rivers Initiative</h3>
+        <p>Thousands of volunteers cleaned 10 km of polluted riverbanks, saving aquatic life.</p>
+      </div>
+      <div class="story">
+        <h3>Solar Schools Project</h3>
+        <p>Installed solar panels in 20 schools, reducing carbon footprint and energy costs.</p>
+      </div>
+    </div>
+
+    <h2>Environmental Tips</h2>
+    <div class="tips slide-in-left">
+      <div class="tip">💧 Conserve water by fixing leaks and using short showers.</div>
+      <div class="tip">🚴‍♂️ Walk, bike, or use public transport instead of driving.</div>
+      <div class="tip">♻️ Reduce, reuse, and recycle to minimize waste.</div>
+      <div class="tip">🌿 Plant native trees and create green spaces.</div>
+      <div class="tip">💡 Use energy-efficient appliances and LED lights.</div>
+    </div>
+
+    <h2>Global Reach</h2>
+    <div class="reach slide-in-right">
+      <div class="reach-item">🌎 Africa: Reforestation projects in Kenya and South Africa</div>
+      <div class="reach-item">🌏 Asia: Clean water campaigns in India and Thailand</div>
+      <div class="reach-item">🌍 Europe: Renewable energy workshops in Germany and Sweden</div>
+      <div class="reach-item">🌎 Americas: Coastal cleanup initiatives in Brazil and USA</div>
+    </div>
+
+    <h2>Join Us</h2>
+    <p>Together, we can make a difference. Whether by volunteering, spreading awareness, or supporting our initiatives, your contribution matters. Let’s work hand in hand to protect our planet — before it’s too late.</p>
+
+    <div class="cta fade-in">
+      <h3>Ready to Take Action?</h3>
+      <p>Become a volunteer, donate, or spread awareness today!</p>
+      <a href="getinvolved.html">Get Involved</a>
+    </div>
+  </section>
+</body>
+</html>
+
+
